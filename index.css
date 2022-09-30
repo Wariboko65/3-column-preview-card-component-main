@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 1px);
+}
+main .container {
+  width: 280px;
+  position: relative;
+}
+main .container .section1, main .container .section3, main .container .section2 {
+  background-color: hsl(31deg, 77%, 52%);
+  padding: 40px;
+  height: 350px;
+  border-radius: 10px 10px 0 0;
+}
+main .container .section1 h2, main .container .section3 h2, main .container .section2 h2 {
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+}
+main .container .section1 p, main .container .section3 p, main .container .section2 p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+main .container .section1 button, main .container .section3 button, main .container .section2 button {
+  text-align: center;
+  padding: 8px 25px;
+  background-color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+  border-radius: 20px;
+  color: hsl(31deg, 77%, 52%);
+}
+main .container .section1 button:hover, main .container .section3 button:hover, main .container .section2 button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+main .container .section2 {
+  background-color: hsl(184deg, 100%, 22%);
+  border-radius: 0;
+}
+main .container .section2 button {
+  color: hsl(184deg, 100%, 22%);
+}
+main .container .section2 button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+}
+main .container .section3 {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+main .container .section3 button {
+  color: hsl(179deg, 100%, 13%);
+}
+main .container .section3 button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+@media screen and (min-width: 992px) {
+  main .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 50%);
+    height: calc(100vh - 40%);
+  }
+  main .container .section1, main .container .section2, main .container .section3 {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  main .container .section1 button, main .container .section2 button, main .container .section3 button {
+    margin-top: 50px;
+  }
+  main .container .section2 {
+    border-radius: 0;
+  }
+  main .container .section3 {
+    border-radius: 0 10px 10px 0;
+  }
+}/*# sourceMappingURL=index.css.map */
