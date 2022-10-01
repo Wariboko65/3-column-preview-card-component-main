@@ -6,7 +6,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://3-column-preview-card-component-main-brown-three.vercel.app/)
+- Live Site URL: [3-column-preview-card-component-main-brown-three](https://3-column-preview-card-component-main-brown-three.vercel.app/)
 
 ### Built with
 
