@@ -48,6 +48,7 @@ main {
             border: 2px solid $lgrey;
             border-radius: 20px;
             color: $orange;
+            transition: 0.3s;
             &:hover {
                 background-color: $orange;
                 color: $lgrey;
@@ -78,6 +79,28 @@ main {
         }
     }
 }
+}
+@media screen and (min-width: 600px) {
+    main {
+        .container {
+            @include flex(row);
+            justify-content: center;
+            align-items: center;
+            width: calc(100vw - 10%);
+            .section1 {
+                border-radius: 10px 0 0 10px;
+                button {
+                    margin-top: 10px;
+                }
+            }
+            .section2 {
+                border-radius: 0;
+            }
+            .section3 {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
 }
 @media screen and (min-width: 992px) {
     main {
