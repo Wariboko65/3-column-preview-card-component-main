@@ -10,14 +10,20 @@ $lgrey: hsl(0, 0%, 95%);
 }
 * {
     box-sizing: border-box;
+    font-family: "Big Shoulders Display", Arial, sans-serif;
 }
 main {
     @include flex(column);
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 1px);
-    .new {
-        color: red;
+    .attribution { 
+        font-size: 13px; 
+        text-align: center; 
+        margin-top: 10px;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
     }
 .container {
     width: 280px;;
@@ -33,6 +39,7 @@ main {
         }
         p {
             color: $twhite;
+            font-size: 15px;
         }
         button {
             text-align: center;

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Big Shoulders Display", Arial, sans-serif;
 }
 
 main {
@@ -9,8 +10,13 @@ main {
   align-items: center;
   min-height: calc(100vh - 1px);
 }
-main .new {
-  color: red;
+main .attribution {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+main .attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 main .container {
   width: 280px;
@@ -28,6 +34,7 @@ main .container .section1 h2, main .container .section3 h2, main .container .sec
 }
 main .container .section1 p, main .container .section3 p, main .container .section2 p {
   color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 15px;
 }
 main .container .section1 button, main .container .section3 button, main .container .section2 button {
   text-align: center;
