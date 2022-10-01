@@ -80,6 +80,7 @@ main {
 }
 }
 @media screen and (min-width: 992px) {
+    main {
     .container {
         @include flex(row);
         justify-content: center;
@@ -100,4 +101,5 @@ main {
             border-radius: 0 10px 10px 0;
         }
     }
+}
 }
