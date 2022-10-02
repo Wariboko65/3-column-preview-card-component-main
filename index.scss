@@ -17,15 +17,15 @@ main {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 1px);
-    .attribution { 
+    aside { 
         font-size: 13px; 
         text-align: center; 
         margin-top: 10px;
     }
-    .attribution a {
+    aside a {
         color: hsl(228, 45%, 44%);
     }
-.container {
+article {
     width: 280px;;
     position: relative;
     .section1 {
@@ -33,6 +33,10 @@ main {
         padding: 40px;
         height: 350px;
         border-radius: 10px 10px 0 0;
+        img {
+            height: 35px;
+            width: 55px;
+        }
         h2 {
             color: $lgrey;
             text-transform: uppercase;
@@ -47,13 +51,19 @@ main {
             background-color: $lgrey;
             border: 2px solid $lgrey;
             border-radius: 20px;
-            color: $orange;
             transition: 0.3s;
             &:hover {
                 background-color: $orange;
                 color: $lgrey;
                 border: 2px solid $lgrey;
             }
+            &:hover a{
+                color: $twhite;
+            }
+        }
+        button a {
+            text-decoration: none;
+            color: $orange
         }
     }
     .section2 {
@@ -82,7 +92,7 @@ main {
 }
 @media screen and (min-width: 600px) {
     main {
-        .container {
+        article {
             @include flex(row);
             justify-content: center;
             align-items: center;
@@ -104,7 +114,7 @@ main {
 }
 @media screen and (min-width: 992px) {
     main {
-    .container {
+    article {
         @include flex(row);
         justify-content: center;
         align-items: center;
