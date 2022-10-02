@@ -26,7 +26,7 @@ main {
         color: hsl(228, 45%, 44%);
     }
 article {
-    width: 280px;;
+    width: 280px;
     position: relative;
     .section1 {
         background-color: $orange;
@@ -54,11 +54,10 @@ article {
             transition: 0.3s;
             &:hover {
                 background-color: $orange;
-                color: $lgrey;
                 border: 2px solid $lgrey;
             }
             &:hover a{
-                color: $twhite;
+                color: $lgrey;
             }
         }
         button a {
@@ -76,6 +75,9 @@ article {
                 background-color: $cyan;
             }
         }
+        button a {
+            color: $cyan;
+        }
     }
     .section3 {
         @extend .section1;
@@ -86,6 +88,9 @@ article {
             &:hover {
                 background-color: $darkcyan;
             }
+        }
+        button a {
+            color: $darkcyan;
         }
     }
 }

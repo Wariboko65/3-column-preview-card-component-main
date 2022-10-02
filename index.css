@@ -50,11 +50,10 @@ main article .section1 button, main article .section3 button, main article .sect
 }
 main article .section1 button:hover, main article .section3 button:hover, main article .section2 button:hover {
   background-color: hsl(31deg, 77%, 52%);
-  color: hsl(0deg, 0%, 95%);
   border: 2px solid hsl(0deg, 0%, 95%);
 }
 main article .section1 button:hover a, main article .section3 button:hover a, main article .section2 button:hover a {
-  color: hsla(0deg, 0%, 100%, 0.75);
+  color: hsl(0deg, 0%, 95%);
 }
 main article .section1 button a, main article .section3 button a, main article .section2 button a {
   text-decoration: none;
@@ -70,6 +69,9 @@ main article .section2 button {
 main article .section2 button:hover {
   background-color: hsl(184deg, 100%, 22%);
 }
+main article .section2 button a {
+  color: hsl(184deg, 100%, 22%);
+}
 main article .section3 {
   background-color: hsl(179deg, 100%, 13%);
   border-radius: 0 0 10px 10px;
@@ -79,6 +81,9 @@ main article .section3 button {
 }
 main article .section3 button:hover {
   background-color: hsl(179deg, 100%, 13%);
+}
+main article .section3 button a {
+  color: hsl(179deg, 100%, 13%);
 }
 
 @media screen and (min-width: 600px) {
